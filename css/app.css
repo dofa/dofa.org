@@ -1,0 +1,27 @@
+/* app css stylesheet */
+
+/*body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+*/
+
+.footer {
+  border-top:20px solid white;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:100;
+  padding-top: 2em;
+  background-color: #333;
+  color: white;
+  padding-bottom: 2em;
+}
+
+.footer button {
+  background-color: #333;
+  -moz-border-radius: 50px; 
+  -webkit-border-radius: 50px; 
+  border-radius: 50px; 
+} 
