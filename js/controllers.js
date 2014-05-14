@@ -6,8 +6,6 @@ angular.module('myApp.controllers', [])
   .controller('MainCtrl', ['$scope', '$location', '$document', function($scope, $location, $document) {
     $scope.items = [
       {path: '/home', title: '首页'},
-      {path: '/photos', title: '相册'},
-      {path: '/spaces', title: '太空科幻'},
       {path: '/about', title: '关于'},
     ];
     $scope.top = "";
@@ -19,44 +17,26 @@ angular.module('myApp.controllers', [])
     };
     $scope.BackToTop = function() {
       $document.scrollTop(0, 200);
-    };    
+    }; 
+
+
   }])
 
-  .controller('HomeCtrl', ['$scope', function($scope) {
 
+  .controller('HomeCtrl', ['$scope', function($scope) {
+    $scope.items = [
+      {image: 'http://dofa.u.qiniudn.com/images/150x150/mcutv.png', heading: '嵌入式设计', content:'8051-based/PIC16/PIC32/stm32等平台', content2: 'USB/TCPIP各种协议我们都能帮你搞定', alt: 'alt1'},
+      {image: 'http://dofa.u.qiniudn.com/images/150x150/web.png', heading: 'Web前端开发', content:'使用Bootstrap UI+AngularJs等新技术', content2: '让你的网站表现力更加优雅', alt: 'alt2'},
+      {image: 'http://dofa.u.qiniudn.com/images/150x150/research.png', heading: '新技术研究', content:' 时刻关注技术前沿，掌控最新技术', content2: '在每一个角落体现我们惊艳的设计', alt: 'alt3'},
+    ];
   
   }])
 
-  .controller('PhotosCtrl', ['$scope', function($scope) {
-    $scope.myInterval = 5000;
-    var slides = $scope.slides = [];
-    $scope.addSlide = function() {
-      var newWidth = 600 + slides.length;
-      slides.push({
-        image: 'http://placekitten.com/' + newWidth + '/300',
-        text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-          ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
-      });
-    };
-    for (var i=0; i<4; i++) {
-      $scope.addSlide();
-    }
-  }])
-
-  .controller('SpacesCtrl', ['$scope', function($scope) {
-    $scope.myInterval = 5000;
-    var slides = $scope.slides = [];
-    $scope.addSlide = function(index) {
-      slides.push({
-        image: 'http://dofa.u.qiniudn.com/image/space/太空科幻' + index + '.jpg'
-      });
-    };
-    for (var i=1; i<26; i++) {
-      $scope.addSlide(i);
-    }
-  }])
 
   .controller('AboutCtrl', ['$scope', function($scope) {
-
+    $scope.items = [
+      {image: 'http://dofa.u.qiniudn.com/images/150x150/150-1.png', heading: '关于网站', content:'网站格言', content2: 'There is a will, there is a way', alt: 'alt1'},
+      {image: 'http://dofa.u.qiniudn.com/images/150x150/150-2.png', heading: '关于我', content:'我的QQ：516199859', content2: '我的email：bitbegin@gmail.com', alt: 'alt2'},
+    ];
 
   }]);
