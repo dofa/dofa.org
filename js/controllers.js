@@ -29,7 +29,11 @@ angular.module('myApp.controllers', [])
       {image: 'http://dofa.u.qiniudn.com/images/150x150/web.png', heading: 'Web前端开发', content:'使用Bootstrap UI+AngularJs等新技术', content2: '让你的网站表现力更加优雅', alt: 'alt2'},
       {image: 'http://dofa.u.qiniudn.com/images/150x150/research.png', heading: '新技术研究', content:' 时刻关注技术前沿，掌控最新技术', content2: '在每一个角落体现我们惊艳的设计', alt: 'alt3'},
     ];
-  
+    $scope.heading1 = "我们的座右铭";
+    $scope.heading2 = "Do Far and Better";
+    $scope.heading3 = "There is a will, there is a way.";
+    $scope.heading4 = "提供优质的服务";
+
   }])
 
 

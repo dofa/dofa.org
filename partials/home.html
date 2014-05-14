@@ -3,10 +3,10 @@
   <div class="viewtop"></div>
   <div class="viewleft"></div>
   <div class="viewc">
-    <h1>我们的座右铭</h1>
+    <h1>{{heading1}}</h1>
     <ul>
-      <!-- <li><h3>There is a will, there is a way.</h3></li> -->
-      <!-- <li><h3>Do Far and Better</h3></li> -->
+      <li><h3>{{heading2}}</h3></li>
+      <li><h3>{{heading3}}</h3></li>
     </ul> 
   </div>
 </div>
@@ -14,7 +14,7 @@
 
 <!-- Three columns of text below the carousel -->
 <div class="row content">
-  <h1><span>提供优质的服务</span></h1>
+  <h1><span>{{heading4}}</span></h1>
   <div ng-repeat="item in items">
     <div class="col-lg-4">
       <img ng-src="{{item.image}}" alt="{{item.alt}}">
